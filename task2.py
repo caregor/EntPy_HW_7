@@ -50,6 +50,6 @@ def generate_files_with_extensions(directory, extensions, num_files_per_extensio
 
 if __name__ == '__main__':
     target_directory = 'files'
-    extensions_list = ['txt', 'dat', 'csv']
+    extensions_list = ['txt', 'mp4', 'jpg']
     num_files_per_extension = [3, 5, 2]
     generate_files_with_extensions(target_directory, extensions_list, num_files_per_extension)
