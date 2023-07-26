@@ -43,7 +43,7 @@ def create_file(directory, exp: str, min_len_name=MIN_LEN_NAME, max_len_name=MAX
             f.write(bytes(randint(0, 255) for _ in range(randint(min_size, max_size))))
 
 
-def generate_files_with_extensions(directory, extensions, num_files_per_extension):
+def generate_files_with_extensions_num_files_per_extension(directory, extensions, num_files_per_extension):
     for extension, count_file in zip(extensions, num_files_per_extension):
         create_file(directory, extension, count_file=count_file)
 
